@@ -1,0 +1,219 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #d1c8c8;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#dark{
+    width: 100%;
+    height: 100%;
+    background: #00000042;
+    position: absolute;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head {
+  width: 100%;
+  height: 100px;
+  background-color: #ffff00;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.head .title {
+  width: 25%;
+  height: 70%;
+  top: -8px;
+  font-size: 1.5em;
+  left: 10px;
+  font-weight: bold;
+  color: #5a5555;
+  position: relative;
+  transition: 0.1s;
+  text-align: center;
+}
+
+.head .title:hover {
+  color: #3b3838;
+  cursor: pointer;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+
+.head .search{
+    width: 30%;
+    height: 35%;
+    position: relative;
+    top: -5px;
+    left: 50px;
+    transition: 0.3s;
+}
+
+.head .search #search{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    transition: 0.5s;
+    padding: 10px;
+}
+
+.head .search:focus-within{
+    border: 5px solid orange;
+    border-radius: 10px;
+}
+
+.head .search #search:focus{
+    border: none;
+    outline: none;
+}
+
+
+
+.head .icons{
+    width: 30%;
+    height: 27%;
+    position: relative;
+    left: 90px;
+    top: -6px;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    display: flex;
+    transition: 0.5s;
+}
+
+.head .icons ion-icon{
+    font-size: 2em;
+    transition: 0.5s;
+
+}
+
+.head .icons ion-icon:nth-child(1){
+    color: blue;
+}
+
+.head .icons ion-icon:nth-child(1):hover{
+    color: rgb(1, 1, 152);
+    cursor: pointer;
+}
+
+.head .icons ion-icon:nth-child(2){
+    color: green;
+}
+
+.head .icons ion-icon:nth-child(2):hover{
+    color: rgb(6, 74, 1);
+    cursor: pointer;
+}
+
+.head .icons ion-icon:nth-child(3){
+    color: rgb(104, 173, 246);
+}
+
+.head .icons ion-icon:nth-child(3):hover{
+    color: rgb(1, 152, 149);
+    cursor: pointer;
+}
+
+.body{
+    width: 100%;
+    height: 75%;
+    background: white;
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+}
+
+.body .productinfo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+}
+
+.body .product{
+    position: relative;
+    left: 70%;
+    top: 25%;
+    width: 25%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body .product img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: 0.3s;
+    object-fit: cover;
+}
+
+.body .product img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.body .abtproduct{
+    position: absolute;
+    width: 70%;
+    height: 100px;
+    top: 35%;
+}
+
+.body .abtproduct p{
+    font-size: 1.2em;
+    color: #5a5555;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.body .abtproduct p:hover{
+    color: #3b3838;
+}
+
+
+
+.footer{
+    width: 100%;
+    height: 50px;
+    background: #ffff00;
+    position: absolute;
+    bottom: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #5a5555;
+}
+
